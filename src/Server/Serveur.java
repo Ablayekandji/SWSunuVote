@@ -21,8 +21,8 @@ public class Serveur {
         Endpoint.publish(url4,new Authentification());
         System.out.println("Web service Inscription demarre sur "+url);
         System.out.println("Web service CirconscriptionService demarre sur "+url2);
-        System.out.println("Web service changementBureau demarre sur "+ url3);
-        System.out.println("Web service changementBureau demarre sur "+ url4);
+        System.out.println("Web service changement Circonscription demarre sur "+ url3);
+        System.out.println("Web service Authentification demmarre sur "+ url4);
         Region thies = new Region("ninoi145","dakar",1452,456,new LinkedList());
         LinkedList a = new LinkedList();
         a.add("niania");
