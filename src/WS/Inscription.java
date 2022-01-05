@@ -59,6 +59,11 @@ public class Inscription {
                Gson gson = new Gson();
                String circons = gson.toJson(electeur.getCirconscription());
                electeur.setNumbureavote( 1 + (int)(Math.random() * ((electeur.getCirconscription().getNbrebureau() - 1) + 1)));
+               if (electeur.getCirconscription().getNbrebureau()==0){
+                   System.out.println("la circonscription n'existe pas");
+                   return -1;
+
+               }
                System.out.println("numero bureau bii: "+electeur.getNumbureavote());
                String query = "INSERT INTO electeurs values('" + electeur.getNIN() + "','" + electeur.getNom() + "','" + electeur.getPrenom() + "','" +
                        electeur.getDatenaissance() + "','" + electeur.getAdresse() +"','"+ circons +"','"  + electeur.getNumbureavote()+"','"  + "0" +"','"  + "0" +"')";

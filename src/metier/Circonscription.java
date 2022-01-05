@@ -7,6 +7,7 @@ public class Circonscription {
     private String arrondissement;
     //private int bureau;
     private int nbrebureau;
+
     //pour renseigner une circonscription
     public Circonscription(String nom, String region, String departement, String arrondissement, int nbrebureau) {
         this.nom = nom;
@@ -15,6 +16,7 @@ public class Circonscription {
         this.arrondissement = arrondissement;
         this.nbrebureau = nbrebureau;
     }
+
     //pour attribuer une circonscription pour un electeur
     public Circonscription(String nom, String region, String departement, String arrondissement) {
         this.nom = nom;
@@ -22,6 +24,7 @@ public class Circonscription {
         this.departement = departement;
         this.arrondissement = arrondissement;
     }
+
 
     public Circonscription() {
     }

@@ -98,7 +98,7 @@ public class CirconsriptionService {
                     return veri;
                 }
                 else if(idregion==id_dep_region&&id_dep==id_arron) {
-                    String query = "INSERT INTO circonscription values('"+ 0 +"','" + circonscription.getNom() + "','" + circonscription.getRegion().toLowerCase() + "','" + circonscription.getDepartement().toLowerCase()  + "','" + circonscription.getArrondissement().toLowerCase() +"','"+ circonscription.getNbrebureau() +"')";
+                    String query = "INSERT INTO circonscription values('"+ 0 +"','" + circonscription.getNom().toLowerCase() + "','" + circonscription.getRegion().toLowerCase() + "','" + circonscription.getDepartement().toLowerCase()  + "','" + circonscription.getArrondissement().toLowerCase() +"','"+ circonscription.getNbrebureau() +"')";
 
                     Statement sta = connection.createStatement();
                     System.out.println("avant sta");

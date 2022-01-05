@@ -14,7 +14,7 @@ public class Electeur {
     private String datenaissance;
     private String adresse;
     private int numbureavote;
-    private Circonscription circonscription;
+    private Circonscription circonscription = new Circonscription("","","","");
     private  String QUERY ;
 
     public Electeur(String NIN, String prenom, String nom, String datenaissance, String adresse, Circonscription circonscription) {
