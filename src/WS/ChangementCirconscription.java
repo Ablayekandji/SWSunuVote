@@ -1,5 +1,6 @@
 package WS;
 
+import metier.Circonscription;
 import metier.Electeur;
 
 import javax.jws.WebMethod;
@@ -13,6 +14,7 @@ public class ChangementCirconscription {
         Inscription a= new Inscription();
         if (a.verifier(electeur)==1){
             System.out.println("niania");
+            CirconsriptionService modif = new CirconsriptionService();
             return 1;
         }
 

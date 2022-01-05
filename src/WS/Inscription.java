@@ -78,6 +78,9 @@ public class Inscription {
 
                } else {
                    System.out.println("sa passe alors");
+                   System.out.println("mogui verifier donc");
+                   Inscription a= new Inscription();
+                   a.verifier(electeur);
                    return 1;
                }
                // connection.close();
@@ -86,10 +89,6 @@ public class Inscription {
                exception.printStackTrace();
                      return reponse;
            }
-       }
-       if (verification==1){
-           Inscription a= new Inscription();
-           a.verifier(electeur);
        }
 
      return verification;

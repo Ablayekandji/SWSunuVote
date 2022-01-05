@@ -231,7 +231,7 @@ public class CirconsriptionService {
         }
             System.out.println(gson.toJson(json));
             HashMap<String, Integer> retMap = new Gson().fromJson(json, new TypeToken<HashMap<String, Integer>>() {}.getType()
-            );
+        );
             System.out.println(retMap);
             //JE RETOURNE UNE STRING QUI EST AU FORMAT JSON MAINTENANT POUR LE CLIENT POUR AVOIR SA SOUS FORMAT JSON IL FAIT LOPERATION CI-DESSUS
         return gson.toJson(json);
