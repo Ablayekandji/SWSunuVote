@@ -18,6 +18,7 @@ public class Voter {
         int vote=-1;
         String circons="";
         String repart="";
+        Authentification auth = new Authentification();
 
         try{
 
