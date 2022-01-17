@@ -36,6 +36,7 @@ public class Voter {
                 circons=rs.getString("circonscription");
                 System.out.println(vote +" et "+ circons);
             }
+            //pour verifier si la personne na pas encore voter
             if (vote==0){
                 System.out.println("magui ci birr avant de transformer circos en hashmap");
                 HashMap<String, String> retMap = new Gson().fromJson(circons, new TypeToken<HashMap<String, String>>() {}.getType()
@@ -74,6 +75,7 @@ public class Voter {
                     HashMap<String, Integer> repartitio = new Gson().fromJson(repart, new TypeToken<HashMap<String, Integer>>() {}.getType()
                     );
                     System.out.println(repartitio);
+                    //pour recuperer la vote correspondante et comptabliser sa
                     for (String key :repartitio.keySet()){
                         if (votebi.toLowerCase().equals(key)){
                             repartitio.put(key,repartitio.get(key)+1);

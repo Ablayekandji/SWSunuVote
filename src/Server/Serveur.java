@@ -1,13 +1,8 @@
 package Server;
 
 import WS.*;
-import metier.Circonscription;
-import metier.DetailCirconscription;
-import metier.Electeur;
-import metier.Region;
 
 import javax.xml.ws.Endpoint;
-import java.util.LinkedList;
 
 public class Serveur {
     public static void main(String[] args){
@@ -26,18 +21,9 @@ public class Serveur {
         System.out.println("Web service changement Circonscription demarre sur "+ url3);
         System.out.println("Web service Authentification demmarre sur "+ url4);
         System.out.println("Web service Voter demmarre sur "+ url5);
-        Region thies = new Region("ninoi145","dakar",1452,456,new LinkedList());
-        LinkedList a = new LinkedList();
-        a.add("niania");
-        a.add("nionio");
-        thies.setListedepartement(a);
 
-        System.out.println(thies.getListedepartement());
 
-       // Electeur b = new Electeur("1915199700130","niania","nionio","12/01/1997","parcelle",new Circonscription("parcelle","thies","thies","thiesoues"));
-       // System.out.println(b);
-       // CirconsriptionService test= new CirconsriptionService();
-        //test.ajouterCirconscription(new Circonscription("banlieu","dakar","dakar","pikine dagoudane",25));
+
     }
 
 
